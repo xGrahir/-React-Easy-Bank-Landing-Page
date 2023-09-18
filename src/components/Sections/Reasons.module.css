@@ -1,0 +1,84 @@
+.reasons {
+    background-color: hsl(0, 0%, 98%);
+}
+
+.reasons-about {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.reasons-style-text p {
+    margin-top: 1rem;
+    line-height: 30px;
+    color: hsl(233, 8%, 62%);
+}
+
+
+.reasons-about-text p {
+    margin: 0;
+}
+
+.reason {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.8rem;
+    margin-right: 1.5rem;
+}
+
+.reason .icon {
+    background-repeat: no-repeat;
+    width: 72px;
+    height: 72px;
+}
+
+.reason h3 {
+    margin-top: 1rem;
+    font-weight: 300;
+    font-size: 25px;
+    color: var(--dark-blue)
+}
+
+.reason .icon-banking {
+    background-image: url('../../assets/icon-online.svg');
+}
+
+.reason .icon-budgeting {
+    background-image: url('../../assets/icon-budgeting.svg');
+}
+
+.reason .icon-onboarding {
+    background-image: url('../../assets/icon-onboarding.svg');
+}
+
+.reason .icon-online {
+    background-image: url('../../assets/icon-online.svg');
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width:992px) {
+    .reasons-about {
+        text-align: left;
+        white-space: pre-line;
+    }
+
+    .reasons-about-text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .reason {
+        display: block;
+    }
+    
+    .wrapper {
+        flex-direction: row;
+    }
+}
