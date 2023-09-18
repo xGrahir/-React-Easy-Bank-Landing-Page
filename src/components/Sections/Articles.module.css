@@ -9,7 +9,7 @@
 
 .image {
     object-fit: cover;
-    height: 100%;
+    height: 250px;
 }
 
 .card {
@@ -30,7 +30,7 @@
 .card-info {
     display: flex;
     flex-direction: column;
-    padding: 30px;
+    padding: 18px;
     text-align: left;
 }
 
@@ -52,6 +52,20 @@
 .card-info-short {
     color: var(--grayish-blue);
     font-size: 13px;
+}
+
+@media (min-width: 568px) {
+    .card-info-author {
+        font-size: 15px;
+    }
+
+    .card-info-title {
+        font-size: 22px;
+    }
+
+    .card-info-short {
+        font-size: 18px;
+    }
 }
 
 @media (min-width: 992px) {

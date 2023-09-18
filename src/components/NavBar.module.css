@@ -1,6 +1,6 @@
 .bar {
     display: flex;
-    position: fixed;
+    position: absolute;
     top: 0;
     align-items: center;
     justify-content: center;
@@ -17,17 +17,6 @@
     align-items: center;
     width: 100%;
     max-width: 1200px;
-}
-
-.logo-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.logo-section h1 {
-    font-weight: 800;
-    font-size: 1.3rem;
 }
 
 .logo {

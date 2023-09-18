@@ -11,6 +11,7 @@
     height: 100vh;
     background-color: rgba(39, 38, 38, 0.363);
     z-index: 10;
+    touch-action: none;
 }
 
 .active-shadow {
@@ -31,6 +32,7 @@
     background-color: rgb(255, 255, 255);
     transition: transform 0.3s;
     z-index: 100;
+    touch-action: none;
 }
 
 .active {

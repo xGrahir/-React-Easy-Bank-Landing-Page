@@ -9,7 +9,7 @@ import confettiImage from '../../assets/image-confetti.jpg'
 
 const Articles = () => {
 	return (
-		<Section className={styles.articles}>
+		<Section className={styles.articles} id={'blog'}>
 			<Wrapper>
 				<SectionTitle>Latest Articles</SectionTitle>
 				<div className={styles.cards}>
@@ -22,7 +22,7 @@ const Articles = () => {
 						</div>
 					</div>
 					<div className={styles.card}>
-						<img className={styles.image} src={restaurantImage} alt="Banknotes Pounds" />
+						<img className={styles.image} src={restaurantImage} alt="Dishes with food on the table in restaurant" />
 						<div className={styles['card-info']}>
 							<p className={`${styles['card-info-author']} ${styles['card-info-margin']}`}>By Wilson Hutton</p>
 							<h4 className={`${styles['card-info-title']} ${styles['card-info-margin']}`}>Treat yourself without worrying about money</h4>
@@ -30,7 +30,7 @@ const Articles = () => {
 						</div>
 					</div>
 					<div className={styles.card}>
-						<img className={styles.image} src={planeImage} alt="Banknotes Pounds" />
+						<img className={styles.image} src={planeImage} alt="Airplane's wing against the background of clouds" />
 						<div className={styles['card-info']}>
 							<p className={`${styles['card-info-author']} ${styles['card-info-margin']}`}>By Wilson Hutton</p>
 							<h4 className={`${styles['card-info-title']} ${styles['card-info-margin']}`}>Take your Easybank card wherever you go</h4>
@@ -38,7 +38,7 @@ const Articles = () => {
 						</div>
 					</div>
 					<div className={styles.card}>
-						<img className={styles.image} src={confettiImage} alt="Banknotes Pounds" />
+						<img className={styles.image} src={confettiImage} alt="Confetti on a blue background" />
 						<div className={styles['card-info']}>
 							<p className={`${styles['card-info-author']} ${styles['card-info-margin']}`}>By Claire Robinson</p>
 							<h4 className={`${styles['card-info-title']} ${styles['card-info-margin']}`}>Our invite-only Beat accounst are now live!</h4>

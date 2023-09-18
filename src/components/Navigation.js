@@ -4,26 +4,39 @@ import { createPortal } from 'react-dom'
 
 const Navigation = ({ activity, onClick }) => {
 	const links = [
-		{ name: 'Home', id: 1 },
-		{ name: 'About', id: 2 },
-		{ name: 'Contact', id: 3 },
-		{ name: 'Blog', id: 4 },
-		{ name: 'Carrers', id: 5 },
+		{ name: 'Home', id: 1, to: '#home' },
+		{ name: 'About', id: 2, to: '#about' },
+		{ name: 'Contact', id: 3, to: '#contact' },
+		{ name: 'Blog', id: 4, to: '#blog' },
+		{ name: 'Carrers', id: 5, to: '#carrers' },
 	]
 
-	const closeMenuHandler = () => {
+	const closeMenuHandler = (e) => {
+		const link = document.getElementById(e.target.textContent.toLowerCase())
+		if(link) {
+			link.scrollIntoView({ behavior: 'smooth' })
+		}
 		onClick()
+	}
+
+	const goToSectionHandler = (e) => {
+		const link = document.getElementById(e.target.textContent.toLowerCase())
+		if(link) {
+			link.scrollIntoView({ behavior: 'smooth' })
+		}
 	}
 
 	const linksMobile = links.map(link => (
 		<li key={link.id}>
-			<Link onClick={closeMenuHandler}>{link.name}</Link>
+			<Link to={link.to} onClick={closeMenuHandler}>
+				{link.name}
+			</Link>
 		</li>
 	))
 
-	const linksDesktop= links.map(link => (
+	const linksDesktop = links.map(link => (
 		<li key={link.id}>
-			<Link>{link.name}</Link>
+			<Link to={link.to} onClick={goToSectionHandler}>{link.name}</Link>
 		</li>
 	))
 

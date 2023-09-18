@@ -3,10 +3,10 @@ import Articles from './Articles'
 
 const Sections = () => {
 	return (
-		<>
+		<main>
 			<Reasons />
 			<Articles />
-		</>
+		</main>
 	)
 }
 

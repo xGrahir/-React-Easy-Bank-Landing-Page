@@ -4,3 +4,9 @@
     font-size: 35px;
     color: var(--dark-blue)
 }
+
+@media (min-width:768px) {
+    .section-title {
+        font-size: 40px;
+    }
+}

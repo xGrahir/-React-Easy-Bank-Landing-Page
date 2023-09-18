@@ -5,7 +5,7 @@ import SectionTitle from '../utilities/SectionTitle'
 
 const Reasons = () => {
 	return (
-		<Section className={styles.reasons}>
+		<Section className={styles.reasons} id={'about'}>
 			<Wrapper>
 				<div className={`${styles['reasons-about']} ${styles['reasons-style-text']}`}>
 					<SectionTitle>Why choose Easybank?</SectionTitle>
@@ -40,7 +40,7 @@ const Reasons = () => {
 						</p>
 					</div>
 					<div className={`${styles.reason} ${styles['reasons-style-text']}`}>
-						<div className={`${styles['icon-online']} ${styles.icon}`}></div>
+						<div className={`${styles['icon-api']} ${styles.icon}`}></div>
 						<h3>Open API</h3>
 						<p>
 							Menage your savings, investments, pension, and much more from one account. Tracing your money has never
