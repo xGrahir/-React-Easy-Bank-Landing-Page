@@ -8,6 +8,7 @@
 
 .mobile {
 	display: flex;
+	flex-direction: column;
 	z-index: 100;
 }
 
@@ -112,6 +113,10 @@
 		display: flex;
 		width: 100%;
 		max-width: 1200px;
+	}
+
+	.mobile {
+		flex-direction: row;
 	}
 
 	.intro-mobile {
