@@ -2,8 +2,35 @@ import styles from './Reasons.module.css'
 import Wrapper from '../utilities/Wrapper'
 import Section from '../utilities/Section'
 import SectionTitle from '../utilities/SectionTitle'
+import Reason from './Reason'
+
+const REASONS = [
+	{
+		title: 'Online Banking',
+		info: 'Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world.',
+		icon: 'icon-banking',
+	},
+	{
+		title: 'Simple Budgeting',
+		info: 'See exactly where your money goes each month. Receive notifications when you\'re close to your hitting limits.',
+		icon: 'icon-budgeting',
+	},
+	{
+		title: 'Fast Onboarding',
+		info: 'We don\'t do branches. Open your account in minutes online and start taking control of your finances right away.',
+		icon: 'icon-onboarding',
+	},
+	{
+		title: 'Open API',
+		info: 'Menage your savings, investments, pension, and much more from one account. Tracing your money has never been easier.',
+		icon: 'icon-api',
+	},
+]
 
 const Reasons = () => {
+
+	const reasons = REASONS.map(reason => <Reason reason={reason}/>)
+
 	return (
 		<Section className={styles.reasons} id={'about'}>
 			<Wrapper>
@@ -16,38 +43,7 @@ const Reasons = () => {
 						</div>
 					</div>
 					<div className={styles.wrapper}>
-						<div className={`${styles.reason} ${styles['reasons-style-text']}`}>
-							<div className={`${styles['icon-banking']} ${styles.icon}`}></div>
-							<h3>Online Banking</h3>
-							<p>
-								Our modern web and mobile applications allow you to keep track of your finances wherever you are in the
-								world.
-							</p>
-						</div>
-						<div className={`${styles.reason} ${styles['reasons-style-text']}`}>
-							<div className={`${styles['icon-budgeting']} ${styles.icon}`}></div>
-							<h3>Simple Budgeting</h3>
-							<p>
-								See exactly where your money goes each month. Receive notifications when you're close to your hitting
-								limits.
-							</p>
-						</div>
-						<div className={`${styles.reason} ${styles['reasons-style-text']}`}>
-							<div className={`${styles['icon-onboarding']} ${styles.icon}`}></div>
-							<h3>Fast Onboarding</h3>
-							<p>
-								We don't do branches. Open your account in minutes online and start taking control of your finances
-								right away.
-							</p>
-						</div>
-						<div className={`${styles.reason} ${styles['reasons-style-text']}`}>
-							<div className={`${styles['icon-api']} ${styles.icon}`}></div>
-							<h3>Open API</h3>
-							<p>
-								Menage your savings, investments, pension, and much more from one account. Tracing your money has never
-								been easier.
-							</p>
-						</div>
+						 {reasons}
 					</div>
 				</div>
 			</Wrapper>
