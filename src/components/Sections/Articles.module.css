@@ -27,6 +27,10 @@
     transform: scale(1.02);
 }
 
+.card:hover > .card-info .card-info-title {
+    color: var(--lime-green);
+}
+
 .card-info {
     display: flex;
     flex-direction: column;

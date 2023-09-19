@@ -1,22 +1,98 @@
 .footer {
-    display: flex;
-    justify-content: center;
-    padding: 3rem 2rem;
-    background-color: var(--dark-blue);
-}
-
-.logo {
-    background-image: url('../assets/logo.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 180px;
-    height: 25px;
+	display: flex;
+	justify-content: center;
+	padding: 3rem 2rem;
+	background-color: var(--dark-blue);
 }
 
 .wrapper {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+}
+
+.logosvg {
+	background-image: url('../assets/logo-white.svg');
+    background-repeat: no-repeat;
+    background-position:  center;
+	width: 180px;
+	height: 25px;
+}
+
+.logo {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.icons {
+	margin-top: 1.5rem;
+}
+
+.icons svg {
+	margin: 0 0.5rem;
+    cursor: pointer;
+}
+
+.icons svg:hover path {
+	fill: var(--lime-green);
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+
+.links a {
+    margin: 0.5rem 0;
+    color: var(--white);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.links a:hover {
+    color: var(--lime-green)
+}
+
+.actions {
+    display: flex;
     flex-direction: column;
     align-items: center;
-} 
+    margin-top: 2rem;
+}
+
+.actions p {
+    margin-top: 2rem;
+    color: white;
+}
+
+@media (min-width:992px) {
+    .wrapper {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .links {
+        position: absolute;
+        left: 32%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .links a {
+        margin: 0.5rem 0;
+    }
+
+    .actions {
+        align-items: flex-end;
+    }
+
+    .icons-wrapper {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-evenly;
+    }
+}

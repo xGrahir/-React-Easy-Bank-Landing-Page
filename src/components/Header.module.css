@@ -128,12 +128,11 @@
 		display: flex;
         justify-content: center;
         align-items: center;
-        background-repeat: no-repeat;
         top: 0;
 		right: -40%;
 		background-image: url('../assets/bg-intro-desktop.svg');
-		background-size: contain;
 		background-repeat: no-repeat;
+		background-size: contain;
 		width: 95%;
 		height: 100%;
 	}
