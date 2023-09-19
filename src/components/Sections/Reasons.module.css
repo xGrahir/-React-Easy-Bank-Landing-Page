@@ -62,6 +62,10 @@
     align-items: center;
 }
 
+.overlay {
+    z-index: 100;
+}
+
 @media(min-width: 768px) {
     .reason h3 {
         font-size: 30px;

@@ -58,6 +58,10 @@
     font-size: 13px;
 }
 
+.overlay {
+    z-index: 100;
+}
+
 @media (min-width: 568px) {
     .card-info-author {
         font-size: 15px;

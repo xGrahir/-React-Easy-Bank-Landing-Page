@@ -6,6 +6,11 @@
 	margin-bottom: 4rem;
 }
 
+.mobile {
+	display: flex;
+	z-index: 100;
+}
+
 .intro-mobile {
 	display: flex;
 	justify-content: center;
@@ -52,6 +57,7 @@
 .header button {
 	margin-top: 2rem;
 }
+
 
 @media (max-width: 576px) {
 	.mockups {
