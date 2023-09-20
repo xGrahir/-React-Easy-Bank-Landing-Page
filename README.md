@@ -22,3 +22,6 @@ I wrote this project to increase my skills as a Frontend Developer.
 3. If you're already in project's path, type 'npm install' in terminal.
 4. After installation is done, type 'npm start'.
 5. The application should open automatically in the default browser window.
+
+<h3>See live</h3>
+You can watch this project live under this URL: https://react-easy-bank-landing-page.vercel.app/
