@@ -15,13 +15,5 @@ I wrote this project to increase my skills as a Frontend Developer.
 -React </br>
 -React Router
 
-<h3>How to use:</h3>
-
-1. Clone repository according to https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository
-2. Open terminal and go to the project's path.
-3. If you're already in project's path, type 'npm install' in terminal.
-4. After installation is done, type 'npm start'.
-5. The application should open automatically in the default browser window.
-
 <h3>See live</h3>
 You can watch this project live under this URL: https://react-easy-bank-landing-page.vercel.app/
